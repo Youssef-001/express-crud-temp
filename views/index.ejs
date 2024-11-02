@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <% usernames.forEach((user)=> {%>
+    <h4><%=user.username%></h4>
+    <% })%>
+
+    <form action="/search" method="GET">
+      <label for="search">Enter username for search: </label>
+      <input type="text" name="search" />
+      <button class="submit">Search</button>
+    </form>
+
+    <form action="/delete" method="DELETE">
+      <input type="submit" value="delete" />
+    </form>
+  </body>
+</html>
